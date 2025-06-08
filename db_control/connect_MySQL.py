@@ -49,6 +49,6 @@ engine = create_engine(
     pool_pre_ping=True,
     pool_recycle=3600,
     connect_args={
-        "ssl_ca": SSL_CA_PATH
+        "ssl_ca": CERT_PATH  # <- ★ここを 'CERT_PATH' に変更する
     }
 )
